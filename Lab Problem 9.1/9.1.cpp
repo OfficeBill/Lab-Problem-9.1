@@ -24,4 +24,10 @@ int main(void)
     {
         cout << randarray[i] << " ";
     }
+    cout << "Even indices: ";
+    for (int i = 0; i < 10; i++)
+    {
+        cout << randarray[i] << " ";
+        i = i + 1;
+    }
 }
