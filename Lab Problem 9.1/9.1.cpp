@@ -38,5 +38,5 @@ int main(void)
             cout << randarray[i] << " ";
         }
     }
-    cout << endl;
+    cout << endl << "First and last: " << randarray[0] << " " << randarray[9] << endl;
 }
