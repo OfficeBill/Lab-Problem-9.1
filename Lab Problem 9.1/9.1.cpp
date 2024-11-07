@@ -13,5 +13,15 @@ using namespace std;
 
 int main(void)
 {
-
+    int randarray[10];
+    srand(time(0));
+    for (int i = 0; i < 10; i++)
+    {
+        randarray[i] = rand() % 9000 + 1000;
+    }
+    cout << "The random integers: ";
+    for (int i = 0; i < 10; i++)
+    {
+        cout << randarray[i] << " ";
+    }
 }
