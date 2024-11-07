@@ -38,5 +38,18 @@ int main(void)
             cout << randarray[i] << " ";
         }
     }
-    cout << endl << "First and last: " << randarray[0] << " " << randarray[9] << endl;
+    cout << endl << "Reversed order: ";
+    int first = 0, last = 9;
+    for (int i = 0; i < 5; i++)
+    {
+        swap(randarray[first], randarray[last]);
+        first = first + 1;
+        last = last - 1;
+    }
+    for (int i = 0; i < 10; i++)
+    {
+        cout << randarray[i] << " ";
+    }
+    cout << endl << "First and last: " << randarray[9] << " " << randarray[0] << endl;
 }
+
