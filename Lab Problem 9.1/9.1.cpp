@@ -24,10 +24,19 @@ int main(void)
     {
         cout << randarray[i] << " ";
     }
-    cout << "Even indices: ";
+    cout << endl << "Even indices: ";
     for (int i = 0; i < 10; i++)
     {
         cout << randarray[i] << " ";
         i = i + 1;
     }
+    cout << endl << "Even values: ";
+    for (int i = 0; i < 10; i++)
+    {
+        if (randarray[i] % 2 == 0)
+        {
+            cout << randarray[i] << " ";
+        }
+    }
+    cout << endl;
 }
